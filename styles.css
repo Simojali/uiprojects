@@ -106,6 +106,8 @@ header button:hover {
     width: 250px;
     border-radius: 10px;
     border: #007d6f solid 1.5px;
+    outline: none;
+
 }
 select {
     padding: 12px;
@@ -113,6 +115,8 @@ select {
     border: #007d6f solid 1.5px;
     background-color: #007d6f;
     color: white;
+    outline: none;
+    cursor: pointer;
 }
 select::after {
     position: absolute;
@@ -124,7 +128,7 @@ select::after {
     border: 6px solid transparent;
     border-color: #fff transparent transparent transparent;
   }
-  select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
+
+.hero-img {
+    margin-top: 2rem;
   }
