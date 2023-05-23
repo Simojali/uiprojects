@@ -55,6 +55,9 @@ header button:hover {
 .hero-section {
     background: linear-gradient(#e6f5f8, #e6f5f800);
     height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .headline {
     padding-top: 4rem;
@@ -73,11 +76,16 @@ header button:hover {
     color: #6b6b6b;
 }
 .search {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     margin-top: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    width: max-content;
+    padding: 1rem;
 }
 
 .search button {
@@ -99,18 +107,24 @@ header button:hover {
     border-radius: 10px;
     border: #007d6f solid 1.5px;
 }
-.categories {
+select {
     padding: 12px;
     border-radius: 10px;
     border: #007d6f solid 1.5px;
+    background-color: #007d6f;
+    color: white;
 }
-.categories:after {
+select::after {
     position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
+    content: "\25BC";
+    top: 0;
+    right: 0;
     width: 0;
     height: 0;
     border: 6px solid transparent;
     border-color: #fff transparent transparent transparent;
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
