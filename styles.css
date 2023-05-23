@@ -4,20 +4,27 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    
     font-family: 'Montserrat', sans-serif;
 }
 li , a , button {
     text-decoration: none;
+    background-color: #e6f5f8;
+    
+}
+body {
+    background-color: #ffffff;
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 30px 15%;
+    background-color: #e6f5f8;
 }
 .nav-links {
     list-style: none;
+   
 }
 .nav-links li {
     display: inline-block;
@@ -28,7 +35,7 @@ header {
 .nav-links li:hover {
     color: #007d6f;
 }
-button {
+header button {
     padding: 15px 25px;
     background-color: #007d6f;
     border: none;
@@ -42,6 +49,68 @@ button {
     cursor: pointer;
 
 }
-button:hover {
+header button:hover {
     background-color: #03473f;
 }
+.hero-section {
+    background: linear-gradient(#e6f5f8, #e6f5f800);
+    height: 100vh;
+}
+.headline {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.headline h1 {
+    font-size: 3.5rem;
+    color: #007d6f;
+    padding-bottom: 2rem;
+}
+.headline p {
+    font-size: 2rem;
+    color: #6b6b6b;
+}
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.search button {
+    padding: 12px 25px;
+    background-color: #007d6f;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+
+.search button:hover {
+    background-color: #03473f;
+}
+.search-input {
+    padding: 12px;
+    width: 250px;
+    border-radius: 10px;
+    border: #007d6f solid 1.5px;
+}
+.categories {
+    padding: 12px;
+    border-radius: 10px;
+    border: #007d6f solid 1.5px;
+}
+.categories:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
