@@ -9,7 +9,6 @@
 }
 li , a , button {
     text-decoration: none;
-    background-color: #e6f5f8;
     
 }
 body {
@@ -139,25 +138,25 @@ select::after {
     background-color: #edf8fa;
     width: max-content;
     border-radius: 1rem;
-    padding: 1rem 1.3rem;
+    padding: 1rem 1.5rem;
   }
   .card-img {
-    max-height: 80px;
+    max-height: 100px;
     margin-right: .5rem;
   }
   .text h3 {
     color: #007d6f;
-    font-size: 2.2rem;
+    font-size: 3rem;
   }
   .text p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #3b3b3b;
     margin-bottom: .3rem;
   }
   .cards-container {
     display: flex;
     gap: 1rem;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 6rem;
     margin-top: -4rem;
@@ -165,3 +164,32 @@ select::after {
   main {
     padding: 0 15%;
   }
+
+  .courses-h1 {
+    font-size: 3rem;
+    position: relative;
+  }
+  .courses-h1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 40px;
+    width: 160px;
+    background-color: #edf8fa;
+    z-index: -1;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+.courses-categories {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.courses-categories li {
+    display: inline-block;
+    margin: 0 1.2rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: #202020;
+}
