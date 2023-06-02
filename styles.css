@@ -211,13 +211,14 @@ select::after {
 }
 .poster {
     background-color: white;
-    width: 320px;
+    width: 330px;
     height: 400px;
     border-radius: 1rem;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.24);
     overflow: hidden;
     margin-bottom: 3rem;
     display: inline-block;
+    position: relative;
 }
 .poster-img {
     position: relative;
@@ -249,19 +250,52 @@ select::after {
 }
 .poster-text {
     text-align: left;
-    margin: 1rem;
+    margin: 1rem 2rem 1rem 2rem;
 }
 .line {
     height: 1px;
     width: auto;
-    background-color: rgba(128, 128, 128, 0.55);
+    background-color: rgba(128, 128, 128, 0.334);
     margin: 1rem 2rem 1rem 2rem;
     border-radius: 1rem;
 }
 .poster-details {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 1rem 2rem 1rem 2rem;
     font-size: .9rem;
     color: #6b6b6b;
+}
+.poster-details li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.poster-details i {
+    color: #09b5a1;
+}
+.price {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 220px;
+    left: 2rem;
+    z-index: 3;
+}
+.price p {
+    background-color: #ff7131;
+    padding: .3rem .5rem .3rem .5rem ;
+    border-radius: .2rem;
+    color: white;
+    font-weight: 600;
+    width: fit-content;
+    font-size: .9rem;
+}
+.price i {
+    color: gold;
+}
+.stars {
+    margin-left: 1rem;
 }
