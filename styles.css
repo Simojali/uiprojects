@@ -189,7 +189,7 @@ select::after {
 }
 .courses-categories li {
     display: inline-block;
-    margin: 0 1.2rem;
+    margin-right: 1.2rem;
     cursor: pointer;
     font-weight: 600;
     color: #202020;
@@ -211,12 +211,12 @@ select::after {
 }
 .poster {
     background-color: white;
-    width: 330px;
-    height: 400px;
+    width: 380px;
+    height: 450px;
     border-radius: 1rem;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.09);
+    margin-bottom: 1.5rem;
     overflow: hidden;
-    margin-bottom: 3rem;
     display: inline-block;
     position: relative;
 }
@@ -250,7 +250,7 @@ select::after {
 }
 .poster-text {
     text-align: left;
-    margin: 1rem 2rem 1rem 2rem;
+    margin: 1.5rem 2rem 1rem 2rem;
 }
 .line {
     height: 1px;
@@ -280,7 +280,7 @@ select::after {
     position: absolute;
     display: flex;
     align-items: center;
-    top: 220px;
+    top: 240px;
     left: 2rem;
     z-index: 3;
 }
@@ -298,4 +298,11 @@ select::after {
 }
 .stars {
     margin-left: 1rem;
+    font-size: 1.2rem;
+}
+.posters-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
