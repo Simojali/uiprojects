@@ -185,6 +185,7 @@ select::after {
 .courses-categories {
     margin-top: 1.5rem;
     margin-bottom: 2rem;
+    position: relative;
 }
 .courses-categories li {
     display: inline-block;
@@ -192,4 +193,19 @@ select::after {
     cursor: pointer;
     font-weight: 600;
     color: #202020;
+}
+.selected::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    border-radius: 1rem;
+    background-color: #007d6f;
+    z-index: -1;
+    margin-top: 6px;
+    
+}
+.selected {
+    color: #007d6f !important;
 }
