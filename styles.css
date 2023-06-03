@@ -499,7 +499,8 @@ select::after {
     border-radius: 1rem;
     padding: 3rem;
     position: relative;
-    margin-top: 10rem
+    margin-top: 12rem;
+    margin-bottom: -10rem;
 }
 .news-letter h1 {
     margin-bottom: 2rem;
@@ -538,4 +539,26 @@ select::after {
 
 .subscribe button:hover {
     background-color: #03473f;
+}
+footer {
+    background-color: #edf8fa;
+    padding-top: 14rem;
+    padding-bottom: 3rem;
+}
+.footer-details {
+    padding: 0 15%;
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+}
+.footer-details li {
+    list-style: none;
+    color: #6b6b6b;
+    margin-bottom: .5rem;
+}
+.footer-details li:nth-child(1) {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: black !important;
 }
