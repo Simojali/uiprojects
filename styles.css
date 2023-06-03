@@ -306,3 +306,45 @@ select::after {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.teachers {
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+    background-color: #edf8fa;
+    z-index: -2;
+}
+.teachers-cards {
+    padding: 6rem 15% 6rem 15%;
+}
+.teachers-h1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 40px;
+    width: 160px;
+    background-color: white;
+    z-index: -1;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.teachers-h1 {
+    font-size: 3rem;
+    position: relative;
+}
+.teachers-hearder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.arrows {
+    font-size: 2.5rem;
+    color:#007d6f;
+}
+.arrows i {
+    border-radius: .5rem;
+    padding: 0 1.5rem;
+}
+.active {
+    background-color: #cdeaee;
+}
