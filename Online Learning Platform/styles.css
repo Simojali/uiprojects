@@ -140,6 +140,7 @@ select::after {
     width: max-content;
     border-radius: 1rem;
     padding: 1rem 1.5rem;
+    width: 33%;
   }
   .card i {
     font-size: 5rem;
@@ -355,8 +356,8 @@ select::after {
 }
 .t-cards {
     background-color: white;
-    width: 270px;
-    height: 400px;
+    width: 24%;
+    height: 450px;
     border-radius: 1rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.09);
     margin-bottom: 1.5rem;
@@ -449,7 +450,7 @@ select::after {
 }
 .blog-card {
     background-color: white;
-    width: 380px;
+    width: 32%;
     height: 480px;
     border-radius: 1rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.09);
