@@ -565,7 +565,7 @@ footer {
     color: black !important;
 }
 @media only screen and (min-width: 1700px) {
-    main {
+    /* main {
         padding: 0 19%;
       }
     header {
@@ -573,5 +573,5 @@ footer {
     }
     .teachers-cards {
         padding: 6rem 19% 6rem 19%;
-    }
+    } */
   }
