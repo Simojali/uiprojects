@@ -13,6 +13,7 @@ li , a , button {
 }
 body {
     background-color: #ffffff;
+    overflow-x: hidden;
 }
 header {
     display: flex;
@@ -44,7 +45,7 @@ header button {
     color: white;
 }
 .logo {
-    max-height: 60px;
+    max-height: 45px;
     cursor: pointer;
 
 }
@@ -170,6 +171,7 @@ select::after {
   .courses-h1 {
     font-size: 3rem;
     position: relative;
+    margin-bottom: 2rem;
   }
   .courses-h1::after {
     content: "";
@@ -213,11 +215,10 @@ select::after {
 }
 .poster {
     background-color: white;
-    width: 380px;
+    width: 32%;
     height: 450px;
     border-radius: 1rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.09);
-    margin-bottom: 1.5rem;
     overflow: hidden;
     display: inline-block;
     position: relative;
@@ -307,6 +308,7 @@ select::after {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 2rem 1rem;
 }
 .teachers {
     width: 100vw;
@@ -562,3 +564,14 @@ footer {
     margin-bottom: 1rem;
     color: black !important;
 }
+@media only screen and (min-width: 1700px) {
+    main {
+        padding: 0 19%;
+      }
+    header {
+        padding: 30px 19%;
+    }
+    .teachers-cards {
+        padding: 6rem 19% 6rem 19%;
+    }
+  }
