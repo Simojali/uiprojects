@@ -16,40 +16,56 @@ body {
     overflow-x: hidden;
 }
 header {
+    padding: 0 2rem;
+    position: relative;
+    background-color: #e6f5f8;
+}
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 15%;
+    padding: 30px 0;
+    margin: 0 auto;
     background-color: #e6f5f8;
+    width: 100%;
 }
 .nav-links {
     list-style: none;
-   
+    display: flex;
+    gap: 2rem;
 }
 .nav-links li {
-    display: inline-block;
-    margin: 0 2rem;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
-.nav-links li:hover {
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+.nav-links a:hover {
     color: #007d6f;
 }
-header button {
+.navbar .toggle_btn {
+    color: black ;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+.cta {
     padding: 15px 25px;
     background-color: #007d6f;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    color: white;
+    color: white !important;
 }
-.logo {
+.logo img {
     max-height: 45px;
     cursor: pointer;
 
 }
-header button:hover {
+.cta:hover {
     background-color: #03473f;
 }
 .hero-section {
@@ -565,14 +581,58 @@ footer {
     margin-bottom: 1rem;
     color: black !important;
 }
-@media only screen and (min-width: 1700px) {
-    /* main {
-        padding: 0 19%;
-      }
-    header {
-        padding: 30px 19%;
-    }
-    .teachers-cards {
-        padding: 6rem 19% 6rem 19%;
-    } */
+
+.menu-icon {
+    color: white;
+    cursor: pointer;
+    display: none;
   }
+.dropdown-menu {
+    position: absolute;
+    right: 2rem;
+    top: 90px;
+    background-color: #03473f8f;
+    border-radius: 1rem;
+    z-index: 99;
+    width: 300px;
+    backdrop-filter: blur(15px);
+    display: none;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+.dropdown-menu.open {
+    height: 340px;
+}
+.dropdown-menu .nav-links {
+    justify-content: center;
+    align-items: center;
+    color: white ;
+    padding: 1rem;
+    flex-direction: column;
+  }
+.dropdown-menu a {
+    color: white ;
+  }
+.dropdown-menu .cta {
+    width: 100% ;
+    display: flex;
+    justify-content: center;
+  }
+@media (max-width: 1170px) {
+    .navbar .nav-links , .navbar .cta {
+        display: none;
+    }
+    .navbar .toggle_btn {
+        display: block;
+    }
+    .dropdown-menu {
+        display: block;
+    }
+  }
+@media (max-width: 576px) {
+    .dropdown-menu {
+        width: unset;
+        left: 2rem;
+    }
+}
