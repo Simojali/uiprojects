@@ -263,7 +263,7 @@ select::after {
     background: linear-gradient(0deg,#03aa9679 0,rgba(42,44,49,0) 76%);
 }
 .poster-text h3 {
-    font-size: 1.4rem;
+    font-size: calc(10px + 1vw);
     padding-bottom: .3rem;
 }
 .poster-text p {
@@ -527,9 +527,9 @@ select::after {
     margin-bottom: 2rem;
 }
 .news-letter p {
-    width: 48rem;
     line-height: 2;
     margin-bottom: 2rem;
+    padding-right: 7rem;
 }
 .news-letter img {
     position: absolute;
@@ -642,6 +642,19 @@ footer {
         width: unset;
         justify-content: center;
     }
+    .poster {
+        width: 48%;
+    }
+    .poster-text h3 {
+        font-size: calc(10px + 1vw);
+    }
+    .poster-details {
+        font-size: .6rem;
+    }
+    .poster-details li {
+        flex-direction: column;
+        gap: 0;
+    }
   }
 @media (max-width: 576px) {
     .dropdown-menu {
@@ -668,5 +681,21 @@ footer {
     }
     .text p {
         font-size: 1.2rem;
+    }
+    .posters-container {
+        flex-direction: column;
+    }
+    .poster {
+        width: 100%;
+    }
+    .poster-text h3 {
+        font-size: 1.4rem;
+    }
+    .poster-details li {
+        flex-direction:row;
+        gap: .5rem;
+    }
+    .poster-details {
+        font-size: .9rem;
     }
 }

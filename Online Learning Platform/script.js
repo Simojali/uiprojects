@@ -10,3 +10,4 @@ toggleBtn.onclick = function () {
     ? 'bx bx-x'
     : 'bx bx-menu'
 }
+
